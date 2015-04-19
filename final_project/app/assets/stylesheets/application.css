@@ -1,15 +1,104 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* CURRENTLY IN: styles/main.css */
+
+.titlerow {
+	padding: 1rem 5%;
+	background-color: #A00000 ;
+	border-bottom: 0px solid #006600;
+}
+
+.titlerow__title {
+	float: left;
+	color: white;
+	font-family: 'Helvetica', serif;
+	font-size: 4rem;
+	line-height: 3rem;
+}
+
+.white_line { 
+	border-bottom: 4px solid black;
+}
+
+.nav {
+	float: right;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: white;
+	font-size: 3rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-left: 1rem;
+	line-height: 6rem;
+}
+
+.nav__bold {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+/* FONTS */
+
+.footer {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 19px;
+	line-height: 1.5;
+	cursor: default;
+	background: black;
+	color: white;
+	padding: 2% 3%;
+	overflow: none;
+}
+
+.moreinfo__action{
+	margin-top: 10px;
+	display: block;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px inset;
+	text-align: center;
+	background-color: #C0C0C0;
+	padding: 1.2rem;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2rem;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+.columns {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 2% 0;
+}
+.bottom__moreinfo {
+	float: left;
+	width: 45%;
+	padding: 2% 3%;
+	text-align: center;
+}
+
+.bottom__moreinfo2 {
+	float: right;
+	width: 45%;
+	padding: 2% 3%;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Helvetica', serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	cursor: default;
+}
+
+.moreinfo {
+	max-width: 1280px;
+	margin: auto;
+}
+
