@@ -1,0 +1,3 @@
+class MortalInsturmentController < ApplicationController
+
+end

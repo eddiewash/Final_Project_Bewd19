@@ -1,0 +1,3 @@
+class AvengersController < ApplicationController
+
+end

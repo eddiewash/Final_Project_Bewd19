@@ -1,0 +1,3 @@
+class TwilightController < ApplicationController
+
+end

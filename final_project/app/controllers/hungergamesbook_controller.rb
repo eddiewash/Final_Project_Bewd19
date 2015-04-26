@@ -1,0 +1,3 @@
+class HungerGamesBookController < ApplicationController
+
+end

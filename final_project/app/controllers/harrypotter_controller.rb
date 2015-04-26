@@ -1,0 +1,3 @@
+class HarryPotterController < ApplicationController
+
+end

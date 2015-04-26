@@ -4,6 +4,4 @@ def index
 
 	end
 
-
-
 end

@@ -11,57 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150420164608) do
+ActiveRecord::Schema.define(version: 20150419175358) do
 
-  create_table "avengers", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "batman_series", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "harry_potter_books", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "harrypotters", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "hunger_games", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "hunger_games_books", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "lord_of_the_rings", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "mortal_insturments", force: :cascade do |t|
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "twilights", force: :cascade do |t|
+  create_table "harry_potters", force: :cascade do |t|
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
