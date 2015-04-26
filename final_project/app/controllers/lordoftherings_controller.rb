@@ -1,3 +1,0 @@
-class LordOfTheRingsController < ApplicationController
-
-end

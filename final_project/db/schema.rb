@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150420164608) do
+ActiveRecord::Schema.define(version: 20150426175724) do
+
+  create_table "archives", force: :cascade do |t|
+    t.string   "text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "user_id"
+    t.integer  "category_id"
+  end
+
+  add_index "archives", ["category_id"], name: "index_archives_on_category_id"
+  add_index "archives", ["user_id"], name: "index_archives_on_user_id"
 
   create_table "avengers", force: :cascade do |t|
     t.text     "description"
@@ -25,7 +36,25 @@ ActiveRecord::Schema.define(version: 20150420164608) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "batmen", force: :cascade do |t|
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "harry_potter_books", force: :cascade do |t|
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "harry_potters", force: :cascade do |t|
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

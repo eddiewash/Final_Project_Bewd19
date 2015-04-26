@@ -1,3 +1,0 @@
-class HungerGameController < ApplicationController
-
-end

@@ -1,3 +1,0 @@
-class BatmanSeriesController < ApplicationController
-
-end

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'greetings#index'
-  
+  get "categories/show"
+  root "greetings#index"
+  #resources :archives
+  #resources :categories, only: :show
 
 
 end
