@@ -1,0 +1,20 @@
+<h1>Create a new link brah</h1>
+
+<p>Help us build our archive!!! Please post new entries as you wish</p>
+<%= link_to "Create a new entry!", new_entry_path %>
+<section>
+  <% @categories.each do |category| %>
+    <article>
+      <section>
+        <%= link_to category.name, category %>
+        <header>
+          <% category.recent_entries.each do |entry| %>
+          </header>
+          <article>
+            <%= link_to "#{truncate(entry.title)} - #{entry.price}", entry %>
+          </article>
+        <% end %>
+      </section>
+    </article>
+  <% end %>
+</section>

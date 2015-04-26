@@ -1,0 +1,14 @@
+<h1>Add a entry here:</h1>
+<%= form_for @entry do |f| %>
+  <%= label_tag :category %>
+  <%= text_field_tag :category %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  <%= f.label :location %>
+  <%= f.number_field :location, :size => 5, :value => 0, :step => 1, :min => 0 %>
+  <%= f.submit %>
+<% end %>
