@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   get "categories/show"
   root "greetings#index"
-  resources :archives
+  resources :entries
   resources :categories, only: :show
 
 

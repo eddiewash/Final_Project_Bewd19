@@ -1,6 +1,6 @@
-class AddUserReferenceToArchives < ActiveRecord::Migration
+class AddUserReferenceToEntries < ActiveRecord::Migration
 
   def change
-    add_reference :archives, :user, index: true
+    add_reference :entries, :user, index: true
   end
 end

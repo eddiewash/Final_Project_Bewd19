@@ -11,7 +11,7 @@
           <% category.recent_entries.each do |entry| %>
           </header>
           <article>
-            <%= link_to "#{truncate(entry.title)} - #{entry.price}", entry %>
+            <%= link_to "#{truncate(entry.title)} - #{entry.location}", entry %>
           </article>
         <% end %>
       </section>

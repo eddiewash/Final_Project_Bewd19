@@ -1,6 +1,6 @@
-class AddReferenceToCategoryToArchives < ActiveRecord::Migration
+class AddReferenceToCategoryToEntries < ActiveRecord::Migration
   def change
-    add_reference :archives, :category, index: true
+    add_reference :entries, :category, index: true
   end
 end
 

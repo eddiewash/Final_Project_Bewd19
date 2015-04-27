@@ -1,9 +1,9 @@
 class Category < ActiveRecord::Base
 
-  has_many :archives
+  has_many :entries
 
   def recent_archives
-    archive.limit(10)
+    entry.limit(10)
   end
 
 def self.from_params(category)
