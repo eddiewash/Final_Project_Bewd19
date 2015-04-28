@@ -2,7 +2,7 @@ class Category < ActiveRecord::Base
 
   has_many :entries
 
-  def recent_archives
+  def recent_entries
     entry.limit(10)
   end
 
