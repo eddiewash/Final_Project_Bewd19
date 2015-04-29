@@ -33,11 +33,15 @@
         Shipr
       </h1>
       <nav class="nav">
-        <a href="#" class="nav__link nav__bold">All Archives</a>
-        <a href="#" class="nav__link">TV</a>
-        <a href="#" class="nav__link">Movies</a>
-        <a href="#" class="nav__link">Books</a>
-        <a href="#" class="nav__link">Bands</a>
+        <%= link_to "Create", new_entry_path, class: "nav__link nav__bold" %>
+        <%= link_to "All Archives", categories_path, class: "nav__link nav__bold" %>
+        <%= link_to "Movies", category_path(14), class: "nav__link nav__bold" %>
+        <%= link_to "TV", category_path(15), class: "nav__link nav__bold" %>
+        <%= link_to "Books", category_path(16), class: "nav__link nav__bold" %>
+        <%= link_to "Music", category_path(17), class: "nav__link nav__bold" %>
+        <%= link_to "Video Games", category_path(18), class: "nav__link nav__bold" %>
+        <!-- <a href="#" class="nav__link">Books</a>
+        <a href="#" class="nav__link">Bands</a> -->
       </nav>
   </header>
 
@@ -56,10 +60,11 @@
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sherlock</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">One Direction</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shadowhunters</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"Harry Potter</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="categories/4">Movies</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="categories/5">TV</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="categories/6">Book</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="categories/7">Music</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="categories/8">Games</a></li>
   </ul>
 </div><br>
 

@@ -1,9 +1,10 @@
 class Category < ActiveRecord::Base
 
   has_many :entries
+  has_many :categories
 
   def recent_entries
-    entry.limit(10)
+    entry.limit(50)
   end
 
 def self.from_params(category)

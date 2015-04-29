@@ -1,7 +1,53 @@
-<h1><%= @category.name %></h1>
-<h2>Listings under this category</h2>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title >Shipr</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='styles/reset.css'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+<body class="debug"> 
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="../assets/mi1.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/s1.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="../assets/hp1.jpg" alt="...">
+    </div>
+  </div>
+
+</div> <!-- Carousel -->
+
+<header class="white_line">
+    <div class="row titlerow">
+      <h1 class="titlerow__title">
+        Shipr
+      </h1>
+      <nav class="nav">
+        <%= link_to "Create", new_entry_path, class: "nav__link nav__bold" %>
+        <%= link_to "All Archives", categories_path, class: "nav__link nav__bold" %>
+        <%= link_to "Movies", category_path(14), class: "nav__link nav__bold" %>
+        <%= link_to "TV", category_path(15), class: "nav__link nav__bold" %>
+        <%= link_to "Books", category_path(16), class: "nav__link nav__bold" %>
+        <%= link_to "Music", category_path(17), class: "nav__link nav__bold" %>
+        <%= link_to "Video Games", category_path(18), class: "nav__link nav__bold" %>
+        <!-- <a href="#" class="nav__link">Books</a>
+        <a href="#" class="nav__link">Bands</a> -->
+      </nav>
+  </header>
+<h2>Listings under <%= @category.text %></h2>
 <ul>
-  <% @category.classifieds.each do |classified| %>
-    <li><%= link_to "#{truncate(classified.title)} - #{classified.price}", classified %></li>
+  <% @category.entries.each do |entry| %>
+    <li><%= link_to "#{truncate(entry.title)} - #{entry.id}", entry %></li>
   <% end %>
 </ul>
+

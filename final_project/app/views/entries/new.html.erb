@@ -1,7 +1,6 @@
 <h1>Add a new entry here:</h1>
 <%= form_for @entry do |f| %>
-  <%= label_tag :category %>
-  <%= text_field_tag :category %>
+  <%= f.collection_select :category_id, @categories, :id, :text  %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :link %>

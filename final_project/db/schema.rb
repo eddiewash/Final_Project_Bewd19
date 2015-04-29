@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150427231819) do
+ActiveRecord::Schema.define(version: 20150428221706) do
 
   create_table "archives", force: :cascade do |t|
     t.string   "text"
@@ -49,14 +49,14 @@ ActiveRecord::Schema.define(version: 20150427231819) do
   end
 
   create_table "entries", force: :cascade do |t|
-    t.string   "text"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
     t.string   "title"
-    t.string   "category"
-    t.string   "link"
     t.string   "description"
-    t.decimal  "location"
+    t.string   "link"
+    t.string   "location"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "category_id"
   end
 
   create_table "harry_potter_books", force: :cascade do |t|
